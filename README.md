@@ -1,4 +1,10 @@
-# [Start Bootstrap - Resume](https://startbootstrap.com/template-overviews/resume/)
+# Personal Portfolio Website
+Utilized a Start Bootstrap template for an efficient structure to get started and custmoized fully from there. Uses Gulp.js and Sass
+
+### Below is the instructions for the template use:
+
+
+## [Start Bootstrap - Resume](https://startbootstrap.com/template-overviews/resume/)
 
 [Resume](https://startbootstrap.com/template-overviews/resume/) is a resume and CV theme for [Bootstrap](http://getbootstrap.com/) created by [Start Bootstrap](http://startbootstrap.com/). This theme features a fixed sidebar with content sections to build a simple, yet elegant resume.
 
