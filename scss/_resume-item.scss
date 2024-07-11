@@ -26,3 +26,21 @@ section.resume-section {
     padding-bottom: 3rem !important;
   }
 }
+
+.project-title {
+  min-height: 5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.project-card {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.project-card img {
+  flex-grow: 1;
+}

@@ -103,6 +103,21 @@ section.resume-section {
     padding-top: 3rem !important;
     padding-bottom: 3rem !important; } }
 
+.project-title {
+  min-height: 5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center; }
+
+.project-card {
+  display: flex;
+  flex-direction: column;
+  height: 100%; }
+
+.project-card img {
+  flex-grow: 1; }
+
 .bg-primary {
   background-color: #6f42c1 !important; }
 
