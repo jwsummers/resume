@@ -39,8 +39,18 @@ section.resume-section {
   display: flex;
   flex-direction: column;
   height: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  background-color: #f9f9f9;
 }
 
 .project-card img {
   flex-grow: 1;
+}
+
+.project-description {
+  font-size: 0.875rem;
+  color: #666;
+  margin-top: 10px;
 }
