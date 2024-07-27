@@ -119,6 +119,14 @@ section.resume-section {
   border-radius: 5px;
   background-color: #f9f9f9; }
 
+.project-card {
+  transition: transform 0.3s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-10px);
+}
+
 .project-card img {
   flex-grow: 1; }
 
