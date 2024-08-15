@@ -26,3 +26,16 @@
   });
 
 })(jQuery); // End of use strict
+
+document.addEventListener('DOMContentLoaded', function () {
+  const sections = document.querySelectorAll('.resume-section');
+  sections.forEach(section => {
+    section.classList.add('show');
+  });
+
+  const toggleDarkMode = () => {
+    document.body.classList.toggle('dark-mode');
+  };
+
+  window.toggleDarkMode = toggleDarkMode;
+});
