@@ -1,0 +1,222 @@
+// Import Variables and Mixins
+@import "variables.scss";
+@import "mixins.scss";
+
+// Global Styles
+body {
+  @include body-font;
+  padding-top: 54px;
+  color: $gray-600;
+}
+
+@media (min-width: 992px) {
+  body {
+    padding-top: 0;
+    padding-left: $sidebar-base-width;
+  }
+}
+
+// Headings
+h1, h2, h3, h4, h5, h6 {
+  @include heading-font;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: $gray-800;
+}
+
+h1 {
+  font-size: 6rem;
+  line-height: 5.5rem;
+}
+
+h2 {
+  font-size: 3.5rem;
+}
+
+.subheading {
+  text-transform: uppercase;
+  font-weight: 500;
+  @include heading-font;
+  font-size: 1.35rem;
+}
+
+// Social Icons
+.list-social-icons a {
+  color: $gray-700;
+
+  &:hover {
+    color: $primary;
+  }
+
+  .fa-lg {
+    font-size: 1.75rem;
+  }
+}
+
+.list-icons {
+  font-size: 3rem;
+
+  .list-inline-item i {
+    &:hover {
+      color: $primary;
+    }
+  }
+}
+
+// Navbar
+#sideNav {
+  text-align: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  width: $sidebar-base-width;
+  height: 100vh;
+
+  .navbar-brand {
+    display: flex;
+    margin: auto auto 0;
+    padding: 0.5rem;
+
+    .img-profile {
+      max-width: 10rem;
+      max-height: 10rem;
+      border: 0.5rem solid fade-out($white, 0.8);
+      transition: transform 0.3s ease-in-out;
+
+      &:hover {
+        transform: scale(1.1);
+      }
+    }
+  }
+
+  .navbar-collapse {
+    display: flex;
+    align-items: flex-start;
+    flex-grow: 0;
+    width: 100%;
+    margin-bottom: auto;
+
+    .navbar-nav {
+      flex-direction: column;
+      width: 100%;
+
+      .nav-item {
+        display: block;
+
+        .nav-link {
+          font-weight: 600;
+          text-transform: uppercase;
+          display: block;
+          transition: color 0.3s ease-in-out;
+
+          &:hover {
+            color: #17a2b8;
+          }
+        }
+      }
+    }
+  }
+}
+
+// Resume Section
+section.resume-section {
+  border-bottom: 1px solid $gray-300;
+  padding-top: 5rem !important;
+  padding-bottom: 5rem !important;
+  opacity: 0;
+  transition: opacity 0.6s ease-in-out;
+
+  &.show {
+    opacity: 1;
+  }
+
+  @media (min-width: 768px) {
+    min-height: 100vh;
+
+    .resume-item .resume-date {
+      min-width: 18rem;
+    }
+  }
+
+  @media (min-width: 992px) {
+    padding-top: 3rem !important;
+    padding-bottom: 3rem !important;
+  }
+}
+
+// Project Cards
+.project-title {
+  min-height: 5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.project-card, .blog-card {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+  transition: transform 0.3s ease-in-out;
+
+  &:hover {
+    transform: translateY(-10px);
+  }
+
+  img {
+    flex-grow: 1;
+  }
+
+  .project-description {
+    font-size: 0.875rem;
+    color: #666;
+    margin-top: 10px;
+  }
+}
+
+// Dark Mode
+.dark-mode {
+  background-color: #121212;
+  color: #ffffff;
+
+  .navbar, .resume-section, .project-card, .blog-card {
+    background-color: #121212;
+    color: #ffffff;
+  }
+
+  .nav-link {
+    color: #ffffff;
+
+    &:hover {
+      color: #17a2b8;
+    }
+  }
+}
+
+.dark-mode-toggle {
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  background-color: #17a2b8;
+  color: #ffffff;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  z-index: 1000;
+}
+
+// Links
+a {
+  color: $primary;
+
+  &:hover, &:focus, &:active {
+    color: #4e2d89;
+  }
+}
